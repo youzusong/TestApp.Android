@@ -1,0 +1,2 @@
+include ':app', ':ys_qq_login'
+rootProject.name='TestApp.Android'

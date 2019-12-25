@@ -1,2 +1,2 @@
-include ':app', ':ys_qq_login'
+include ':app', ':ys_qq_login', ':ys_google_login'
 rootProject.name='TestApp.Android'

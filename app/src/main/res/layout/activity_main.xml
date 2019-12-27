@@ -8,6 +8,24 @@
         android:id="@+id/btn_qqlogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="QQ Login"/>
+        android:text="测试：QQ登录"/>
+
+    <Button
+        android:id="@+id/btn_gglogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试：谷歌登录" />
+
+    <Button
+        android:id="@+id/btn_fblogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试：FB登录" />
+
+    <Button
+        android:id="@+id/btn_linelogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试：LINE登录" />
 
 </LinearLayout>

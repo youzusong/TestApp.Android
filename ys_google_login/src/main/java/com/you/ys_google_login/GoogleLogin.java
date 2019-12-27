@@ -32,22 +32,27 @@ public class GoogleLogin {
 
         Log.i("GoogleLogin", "login");
 
-        // 设定选项值
-        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken("244668994570-dn376h0ls5gl99si6rrp6lg13tu2ecvq.apps.googleusercontent.com")
-                .requestEmail()
-                .requestId()
-                .requestProfile()
-                .build();
+        try {
 
-        // 获取client
-        GoogleSignInClient signInClient = GoogleSignIn.getClient(mActivity, gso);
+            // 设定选项值
+            GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                    .requestIdToken("244668994570-dn376h0ls5gl99si6rrp6lg13tu2ecvq.apps.googleusercontent.com")
+                    .requestEmail()
+                    .requestId()
+                    .requestProfile()
+                    .build();
 
-        // 获取intent
-        Intent signInIntent = signInClient.getSignInIntent();
+            // 获取client
+            GoogleSignInClient signInClient = GoogleSignIn.getClient(mActivity, gso);
 
-        // 开启登录视窗
-        mActivity.startActivityForResult(signInIntent, RC_SIGN_IN);
+            // 获取intent
+            Intent signInIntent = signInClient.getSignInIntent();
+
+            // 开启登录视窗
+            mActivity.startActivityForResult(signInIntent, RC_SIGN_IN);
+        }catch (Exception ex){
+            Log.e("GoogleLogin", ex.getMessage());
+        }
     }
 
     public void signOut() {

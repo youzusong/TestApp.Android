@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LineLoginActivity"></activity>
+        <activity android:name=".FacebookLoginActivity"></activity>
+        <activity android:name=".LineLoginActivity" />
         <activity android:name=".GoogleLoginActivity" />
         <activity android:name=".QQLoginActivity" />
         <activity android:name=".MainActivity">

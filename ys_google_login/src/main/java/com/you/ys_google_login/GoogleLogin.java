@@ -95,6 +95,7 @@ public class GoogleLogin {
 
         try {
             GoogleSignInAccount account = completedTask.getResult(ApiException.class);
+            //account.isExpired();
 
             // Signed in successfully, show authenticated UI.
             //updateUI(account);

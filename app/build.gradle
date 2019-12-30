@@ -30,8 +30,9 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+
     implementation project(path: ':ys_qq_login')
     implementation project(path: ':ys_google_login')
     implementation project(path: ':ys_line_login')
+    implementation project(path: ':ys_facebook_login')
 }
-
